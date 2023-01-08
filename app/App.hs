@@ -5,7 +5,6 @@ import Types (ToDo (ToDo, isComplete, text))
 
 getTodoItems :: Either String [ToDo] -> [ToDo]
 getTodoItems (Left _) = []
-getTodoItems (Right []) = []
 getTodoItems (Right ts) = ts
 
 add :: String -> [ToDo] -> [ToDo]
